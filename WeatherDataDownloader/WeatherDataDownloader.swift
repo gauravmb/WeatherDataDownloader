@@ -11,9 +11,12 @@ import Foundation
 class WeatherDataDownloader {
     static let sharedInstance = WeatherDataDownloader()
     
-    func downloadWeatherData(regions:[String],weatherParameter:[String], completionHandler:@escaping(_ downloadedFilePaths:[String]) -> (), failureHandler:@escaping ()->()) {
+    func downloadWeatherData(regions:[String],weatherParameter:[String], completionHandler:@escaping(_ downloadedFilePaths:[String],_ region:[String],_ weatherType:[String] ) -> (), failureHandler:@escaping ()->()) {
         
         var downloadedFilePathArray = [String]()
+        var region = [String]()
+        var weather = [String]()
+
         var requestCompleted = 0
         let totalRequest = regions.count*weatherParameter.count
         let region_codes = regions
@@ -52,10 +55,13 @@ class WeatherDataDownloader {
                 DownloadManager.sharedInstance.downloadFileAtURL(downloadURL: downloadURL!, downloadPath: destinationUrl, completionHandler: { (downloadPath) in
                     print("DownloadPath:%@",downloadPath)
                     downloadedFilePathArray.append(downloadPath)
+                    region.append(region_code)
+                    weather.append(weather_param)
+
                     requestCompleted=requestCompleted+1
                     if(requestCompleted==totalRequest)
                     {
-                        completionHandler(downloadedFilePathArray)
+                        completionHandler(downloadedFilePathArray,region,weather)
                     }
                 }, failureHandler: { (error) in
                     print("Error:%@",error.localizedDescription)

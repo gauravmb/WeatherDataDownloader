@@ -16,6 +16,7 @@
 		74307A7C1F306F0100B3A032 /* WeatherDataDownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74307A7B1F306F0100B3A032 /* WeatherDataDownloaderUITests.swift */; };
 		74307A8A1F30720D00B3A032 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74307A891F30720D00B3A032 /* DownloadManager.swift */; };
 		74307A8C1F30B6CA00B3A032 /* WeatherDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74307A8B1F30B6CA00B3A032 /* WeatherDataDownloader.swift */; };
+		748B47CE1F3262820070B5EE /* WeatherDataFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B47CD1F3262820070B5EE /* WeatherDataFileParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		74307A7D1F306F0100B3A032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74307A891F30720D00B3A032 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		74307A8B1F30B6CA00B3A032 /* WeatherDataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataDownloader.swift; sourceTree = "<group>"; };
+		748B47CD1F3262820070B5EE /* WeatherDataFileParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataFileParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				74307A671F306F0100B3A032 /* Info.plist */,
 				74307A891F30720D00B3A032 /* DownloadManager.swift */,
 				74307A8B1F30B6CA00B3A032 /* WeatherDataDownloader.swift */,
+				748B47CD1F3262820070B5EE /* WeatherDataFileParser.swift */,
 			);
 			path = WeatherDataDownloader;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				74307A5E1F306F0100B3A032 /* ViewController.swift in Sources */,
 				74307A8A1F30720D00B3A032 /* DownloadManager.swift in Sources */,
+				748B47CE1F3262820070B5EE /* WeatherDataFileParser.swift in Sources */,
 				74307A5C1F306F0100B3A032 /* AppDelegate.swift in Sources */,
 				74307A8C1F30B6CA00B3A032 /* WeatherDataDownloader.swift in Sources */,
 			);
@@ -515,6 +519,7 @@
 				74307A821F306F0100B3A032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74307A831F306F0100B3A032 /* Build configuration list for PBXNativeTarget "WeatherDataDownloaderTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +528,7 @@
 				74307A851F306F0100B3A032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74307A861F306F0100B3A032 /* Build configuration list for PBXNativeTarget "WeatherDataDownloaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +537,7 @@
 				74307A881F306F0100B3A032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
