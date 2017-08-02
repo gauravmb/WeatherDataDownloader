@@ -14,6 +14,8 @@
 		74307A661F306F0100B3A032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74307A641F306F0100B3A032 /* LaunchScreen.storyboard */; };
 		74307A711F306F0100B3A032 /* WeatherDataDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74307A701F306F0100B3A032 /* WeatherDataDownloaderTests.swift */; };
 		74307A7C1F306F0100B3A032 /* WeatherDataDownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74307A7B1F306F0100B3A032 /* WeatherDataDownloaderUITests.swift */; };
+		74307A8A1F30720D00B3A032 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74307A891F30720D00B3A032 /* DownloadManager.swift */; };
+		74307A8C1F30B6CA00B3A032 /* WeatherDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74307A8B1F30B6CA00B3A032 /* WeatherDataDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		74307A771F306F0100B3A032 /* WeatherDataDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherDataDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74307A7B1F306F0100B3A032 /* WeatherDataDownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataDownloaderUITests.swift; sourceTree = "<group>"; };
 		74307A7D1F306F0100B3A032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74307A891F30720D00B3A032 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		74307A8B1F30B6CA00B3A032 /* WeatherDataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				74307A621F306F0100B3A032 /* Assets.xcassets */,
 				74307A641F306F0100B3A032 /* LaunchScreen.storyboard */,
 				74307A671F306F0100B3A032 /* Info.plist */,
+				74307A891F30720D00B3A032 /* DownloadManager.swift */,
+				74307A8B1F30B6CA00B3A032 /* WeatherDataDownloader.swift */,
 			);
 			path = WeatherDataDownloader;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74307A5E1F306F0100B3A032 /* ViewController.swift in Sources */,
+				74307A8A1F30720D00B3A032 /* DownloadManager.swift in Sources */,
 				74307A5C1F306F0100B3A032 /* AppDelegate.swift in Sources */,
+				74307A8C1F30B6CA00B3A032 /* WeatherDataDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
