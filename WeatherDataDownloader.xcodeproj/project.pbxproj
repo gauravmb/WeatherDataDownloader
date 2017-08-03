@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					74307A571F306F0100B3A032 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VTG63R7UL9;
 						ProvisioningStyle = Automatic;
 					};
 					74307A6B1F306F0100B3A032 = {
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VTG63R7UL9;
 				INFOPLIST_FILE = WeatherDataDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gauravbhatia.WeatherDataDownloader;
@@ -438,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VTG63R7UL9;
 				INFOPLIST_FILE = WeatherDataDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gauravbhatia.WeatherDataDownloader;

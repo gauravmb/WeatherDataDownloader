@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var statusLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +22,12 @@ class ViewController: UIViewController {
         var finalWeatherRows = [String]()
         
 
+        statusLabel.text=String(format:"Downloading data for %@ for Weather %@",regions,weathers)
+        
         WeatherDataDownloader.sharedInstance.downloadWeatherData(regions: regions, weatherParameter: weathers, completionHandler: { (downloadedFilePathArray,regionArray,weatherArray) in
+            
+            self.statusLabel.text=String(format:"Downloaded %d files \n Prasing in Progress",downloadedFilePathArray.count)
+
             
             for index in 0 ..< downloadedFilePathArray.count
             {
@@ -33,7 +40,6 @@ class ViewController: UIViewController {
             documentURL=documentURL.appendingPathComponent(fileName)
             var csvText = "Region,Weather,Year,Month,Value\n"
 
-
             for finalWeatherRow in finalWeatherRows
             {
                 csvText.append(String(format:"%@\n",finalWeatherRow))
@@ -43,6 +49,8 @@ class ViewController: UIViewController {
             do {
                 
                 try csvText.write(to: documentURL, atomically: true, encoding: String.Encoding.utf8)
+                
+            self.statusLabel.text=String(format:"Parsing weather data completed, %@ in available via Itunes File Sharing",fileName,fileName)
                 
             }
             catch
