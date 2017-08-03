@@ -22,7 +22,6 @@ class DownloadManager {
             if let tempLocalUrl = tempLocalUrl, error == nil {
                 // Success
                 if ((response as? HTTPURLResponse)?.statusCode) != nil {
-//                    print("Successfully downloaded. Status code: \(statusCode)")
                 }
                 
                 do
@@ -31,16 +30,13 @@ class DownloadManager {
                 }
                 catch (let writeError)
                 {
-//                    print("Error creating a file \(downloadPath) : \(writeError)")
                     failureHandler(writeError)
                 }
                 completionHandler(downloadPath.absoluteString)
             }
             else
             {
-//                print("Error description: %@", error?.localizedDescription ?? "Failed to copy");
                 failureHandler(error!)
-
             }
         }
         task.resume()
