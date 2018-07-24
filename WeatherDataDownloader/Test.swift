@@ -7,9 +7,4 @@
 //
 
 import Foundation
-<<<<<<< HEAD
-//This is Dev2
-=======
-//This is Dev1
-
->>>>>>> 90036d1965fd67da49f1bedaa3dbd4a9a00d3dd6
+//This is Dev1Dev2
