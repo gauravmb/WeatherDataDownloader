@@ -9,12 +9,3 @@
 import Foundation
 //This is Dev1Dev2
 
-// 1st Commit on Branch
-
-// 1st Commit on Master
-
-// 1st Commit on Branch
-
-// 2st Commit on Master
-
-// 2st Commit on Master
